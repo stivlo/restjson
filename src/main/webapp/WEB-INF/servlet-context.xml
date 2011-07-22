@@ -11,16 +11,15 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
         
-    <!-- Scans the classpath of this application for @Components to deploy as beans -->
-    <context:component-scan base-package="org.obliquid.restjson.model" />
-
     <!-- Configures the @Controller programming model -->
     <mvc:annotation-driven />
+    
+    <!-- Scans for @Components, @Service, @Controller, ...  -->
+    <context:component-scan base-package="org.obliquid.restjson.web" />
     
     <!-- Forwards requests to the "/" resource to the "home" view -->
     <mvc:view-controller path="/" view-name="home"/>
     
-
     <bean name="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>
     
     <!-- Resolves view names to protected .jsp resources within the /WEB-INF/views directory -->
@@ -28,6 +27,5 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
 
 </beans>

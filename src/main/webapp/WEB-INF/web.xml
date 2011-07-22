@@ -7,6 +7,16 @@
 
     <display-name>RestJson</display-name>
  
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <!-- if you need more than one, they can be separated by space  -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/restjson-service.xml</param-value>
+    </context-param>
+    
     <!-- Handles all requests into the application -->
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>

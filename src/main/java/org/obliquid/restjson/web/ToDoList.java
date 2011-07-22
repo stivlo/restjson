@@ -19,7 +19,7 @@ public class ToDoList {
         toDoList.add(new ToDoItem(1, "After that, do the second task"));
         ModelAndView mav = new ModelAndView();
         mav.addObject("toDoList",  toDoList);
-        mav.setViewName("jsonView");
+        mav.setViewName("home"); //jsonView
         return mav;
     }
     
