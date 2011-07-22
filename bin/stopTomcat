@@ -1,0 +1,3 @@
+#!/bin/sh
+cd c:/usr/apache-tomcat-7.0.19
+bin/shutdown.sh && tail -f logs/catalina.out

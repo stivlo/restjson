@@ -1,0 +1,4 @@
+#!/bin/sh
+mvn clean
+mvn package
+cp target/restjson.war c:/usr/apache-tomcat-7.0.19/webapps/

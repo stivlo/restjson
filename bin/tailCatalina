@@ -1,0 +1,2 @@
+#!/bin/sh
+tail -f c:/usr/apache-tomcat-7.0.19/logs/catalina.out

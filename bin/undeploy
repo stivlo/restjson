@@ -1,0 +1,5 @@
+#!/bin/sh
+rm c:/usr/apache-tomcat-7.0.19/webapps/restjson.war
+rm -r c:/usr/apache-tomcat-7.0.19/webapps/restjson
+rm -r c:/usr/apache-tomcat-7.0.19/work/Catalina/localhost/restjson
+

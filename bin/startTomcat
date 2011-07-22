@@ -1,0 +1,4 @@
+#!/bin/sh
+cd c:/usr/apache-tomcat-7.0.19
+bin/startup.sh && tail -f logs/catalina.out
+
