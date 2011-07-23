@@ -20,6 +20,10 @@
     <!-- Forwards requests to the "/" resource to the "home" view -->
     <mvc:view-controller path="/" view-name="home"/>
     
+    <!-- Resolve views based on string names -->
+    <!--  <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />  -->
+        
+    <!-- json view, capable of converting any POJO to json format -->    
     <bean name="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>
     
     <!-- Resolves view names to protected .jsp resources within the /WEB-INF/views directory -->
